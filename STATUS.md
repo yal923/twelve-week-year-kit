@@ -1,6 +1,6 @@
 # 阶段与授权
 
-日期：2026-09-19
+日期：2026-09-20
 
 规格版本：0.1.0-review.4
 
@@ -10,7 +10,7 @@
 
 外部审核：**已收到 ER-001／ER-002，分别针对 review.1／review.2，结论均为 conditional；本次工程设计候选未获独立复核或整份规格批准**
 
-产品兼容性测试：**完整产品尚未进行；Codex 最小探针已执行，有局部通过及明确缺口，WorkBuddy 未验证**
+产品兼容性测试：**完整产品尚未进行；两侧最小试验已有结果。Codex 有直接证据，WorkBuddy 已收到摘要并报告数字写入失败，原始证据待补；双端兼容未通过**
 
 ## 已获授权
 
@@ -42,8 +42,8 @@ ER-001 审阅提交：`25d47ab38b3538a90ae08542c8df2de3f4d8c382`。其 16 项发
 
 review.4 同步 C06–C09，取消当前规格的手工视图降级，增加[搭建工程设计](docs/specs/notion-build-spec.md)及 R23／A25 的跨 Agent 一致性、独立校验和接续验收；现为 23 项需求、25 个场景。方法蓝图、评分、日期和未知请求的恢复语义不变。U01 实际宿主能力、U07 运行环境与分发方式尚未全部验证；完整物理定义、共同工具与适配器尚未交付，许可证仍未选择。
 
-下一步依据[Codex 能力报告](reviews/capability-check-2026-09-19-codex.md)针对性补齐标记和公式的机器回读方案，并取得 WorkBuddy 独立证据，再补齐物理定义与完整实施计划。没有将本次探针批准升级为完整产品实现许可。复核重点见[审核请求](reviews/REVIEW_REQUEST.md)。
+下一步按[两端对照](reviews/capability-comparison-2026-09-20.md)和[只读补证清单](docs/testing/workbuddy-evidence-followup.md)，先核对 WorkBuddy 数字失败的请求类型与尝试轨迹，再针对性补齐标记、公式和错误处理的适配设计，之后形成具体补测／完整实施计划。没有将试验执行或报告接收升级为完整产品实现许可。复核重点见[审核请求](reviews/REVIEW_REQUEST.md)。
 
-最小能力验证的[具体计划](docs/superpowers/plans/2026-09-19-minimal-capability-validation.md)已在 Codex 侧按固定上限执行：两库、四条虚构记录、一个链接视图及一次 Week 修改，另有平台附带默认视图。视图及分页实测通过；description 与公式值需 Agent 只读界面辅助核对，MCP 回读缺口及内部重试仍保留。测试对象未清理，私人原始证据未进入仓库。已准备[WorkBuddy 独立交接材料](docs/testing/workbuddy-handoff.md)，该侧须由她自己的账号授权并运行。U01／U07、A17／A25 和全产品阶段均未因本次局部证据自动通过。
+最小能力验证的[具体计划](docs/superpowers/plans/2026-09-19-minimal-capability-validation.md)在 Codex 侧完成固定样例，视图及两页遍历通过；description 与公式值依赖 Agent 只读界面辅助核对。9 月 20 日收到 WorkBuddy 摘要：报告两库四记录一视图，但两条记录数字为空、初始行集仅 W1A、Week 更新被阻断；不从对象数量推断完整通过。该侧报告本人批准了有限例外，原始授权／尝试轨迹未交回。单行分页、异步 retrying 状态分别只能支持局部读取和状态可观察，不能关闭多页遍历或重放安全。两侧机器回读及内部重试缺口保留，U01／U07、A17／A25 和全产品阶段均未自动通过。原始材料保留私有，尚未派发新测试或清理。
 
 GitHub 上实际审阅版本以审阅者记录的 commit SHA 为准，不用会变化的分支名替代。
