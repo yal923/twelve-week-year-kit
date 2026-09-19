@@ -1,6 +1,6 @@
 # 最小能力验证 Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking. 建议由当前协作 Agent 顺序执行；执行方式与测试范围须由所有者确认。本文件目前只是一份待批准计划。
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking. 建议由当前协作 Agent 顺序执行；执行方式与测试范围须由各自账号持有人确认。本清单保持可复用，单次批准和结果另见 STATUS 与运行报告，不从未勾选框推断未执行或从他人的完成推断本侧获准。
 
 **Goal:** 用有边界的虚构试验，取得两台 Mac 上共同工具运行及 Notion 自动读写的直接证据，识别工程阻断。
 
@@ -14,7 +14,7 @@
 
 ## Global Constraints
 
-- 当前状态：**待批准、未执行**。批准本计划仅授权这里的能力试验和必要临时探针，不授权完整产品实现或正式安装。
+- 当前状态：**Codex 一次有限执行已结束，部分能力仍未通过；WorkBuddy 待本人批准和运行**，见[报告](../../../reviews/capability-check-2026-09-19-codex.md)。批准本计划仅授权这里的能力试验和必要临时探针，不授权完整产品实现或正式安装。原前置门槛不因 Codex 的一次明确例外而放宽。
 - “任一项不足，标明对应环境不兼容并回到设计，不能保留 review.3 的视图人工兜底。”
 - “个人愿景、目标与承诺仍由本人通过对话选择，不能由安装器编造。”
 - “创建失败不自动删除成功部分，不重复执行已 verified 步骤。”
