@@ -4,7 +4,7 @@
 
 **当前状态：规格审阅阶段，尚无可安装产品。禁止将本仓库的草案当作已经验证的运行流程。**
 
-当前规格为 `0.1.0-review.3`：第二轮报告认可首轮 16 项的处理，本版已按授权修订新增的 G01–G05，等待规格确认。[反馈记录](reviews/feedback-log.md)列出接受与不同处理意见；既有报告针对旧提交，不能视为本版已经通过。
+当前规格为 `0.1.0-review.4`：以两轮反馈修订后的 review.3 为基线，补充“说明书＋预写工具”、授权后全自动安装及跨 Agent 复现的工程设计。首批验证 Mac + Codex、Mac + WorkBuddy。[反馈记录](reviews/feedback-log.md)保留历次处置；既有报告针对旧提交，不能视为本版已经通过。
 
 本项目借鉴 Brian P. Moran 与 Michael Lennington 的 *The 12 Week Year*（2013）。这是独立的产品设计，不代表作者或出版方的官方产品。仓库不包含书籍原文文件或真实使用者数据。
 
@@ -13,22 +13,23 @@
 - 两份核心文档：方法蓝图与用户引导／复盘协议。
 - 一份带需求编号、边界和验收依据的产品规格。
 - 数据约定、Notion 落地候选、平台适配和分发架构。
+- 自动搭建工程草案：共同结构、工具职责、交接接口与一致性验收；尚未交付完整可执行结构。
 - 供独立 Agent／LLM 审核的任务说明与场景清单。
 
-未来 v0.1 才会交付 ZIP 使用包：解压后由使用者已有的 Codex 或 WorkBuddy 读取，连接本人 Notion。日常数据保存在各自工作区；无需共享开发者账号或服务器。
+未来 v0.1 才会交付 ZIP 使用包，内含说明书和预先编写的小工具：使用者交给已有的 Codex 或 WorkBuddy，连接本人 Notion、指定位置并授权后自动搭建，无须手工配置字段或视图。这个自动化目标仍待实测；异常恢复保留安全暂停。日常数据保存在各自工作区，无需共享开发者账号或服务器。
 
 ## 阅读顺序
 
 1. [阶段与授权](STATUS.md)、[Agent 约束](AGENTS.md)
 2. [产品规格](docs/specs/v0.1-spec.md)
 3. [方法蓝图](core/twelve-week-year-blueprint.md)、[引导与复盘协议](core/guidance-protocol.md)
-4. [架构](docs/architecture.md)、[数据约定](docs/data-contract.md)
+4. [架构](docs/architecture.md)、[数据约定](docs/data-contract.md)、[搭建工程设计](docs/specs/notion-build-spec.md)
 5. [决定与待验证项](docs/decisions.md)、[验收场景](checks/acceptance-scenarios.md)
 6. [独立审核请求](reviews/REVIEW_REQUEST.md)
 
 ## 产品范围
 
-首批范围是两位独立使用者：一位使用 Codex，一位使用 WorkBuddy；两人各用自己的 Notion。共同流程包括开始周期、安排本周、复盘并恢复、周期交接。方法核心不随用户或平台改变；个人愿景、容量、目标和反馈属于个人数据。
+首批范围是两位 Mac 使用者：一位使用 Codex，一位使用 WorkBuddy；两人各用自己的 Notion。共同流程包括开始周期、安排本周、复盘并恢复、周期交接。方法核心不随用户或平台改变；个人愿景、容量、目标和反馈属于个人数据。具体系统／芯片／宿主版本和工具运行环境未验证，不宣称所有 Mac 均兼容。
 
 初版不包含独立 App、集中托管、多用户后台、自动通知、后台监控或双向数据同步。不宣称周末内能够验证长期目标改善。
 

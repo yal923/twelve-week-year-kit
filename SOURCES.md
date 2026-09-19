@@ -41,3 +41,10 @@ Superpowers 组织设计与验证过程，不是 12 Week Year 的方法来源，
 F03 的判断是工程推论：在本次所查官方资料中没有取得“列举两次为空即可排除先前请求之后完成”的保证，所以不以空结果授权重新创建。未知请求保留 needs_attention，找到匹配或取得明确未派发／无副作用拒绝证据才进入相应恢复分支。并未声称对全部 Notion 版本完成一致性或幂等性审计。
 
 文档固定例使用本地标准库的十进制计算与时区数据作独立核算；这只验证样例数字和时间换算，不验证产品实现，也不写入 Notion。
+
+## 2026-09-19 工程设计补充核对
+
+- 再次读取 [Notion MCP supported tools](https://developers.notion.com/guides/mcp/mcp-supported-tools)：文档描述按连接／计划检查实际工具权限，以及读取保存视图的筛选／排序等配置。它支持把视图回读列为能力检查项，不证明两位使用者当前连接已经可以创建、配置并完整读取所需视图。
+- 再次读取 [WorkBuddy Skills Market](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)：文档描述技能可组织脚本／工作流，并提供本地导入入口。它支持进一步验证“说明书与共同工具”的封装路线，不证明具体运行时、文件权限、Notion 能力或无人工干预已经可用。上述独立 Skill 文档地址本次打开失败，未将它视为新核实证据。
+
+本轮未连接实际 Notion、未探测两位使用者的电脑环境。所有实际兼容性结论仍由 U01／U07 的后续获准验证提供。
