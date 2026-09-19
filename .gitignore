@@ -1,0 +1,21 @@
+# User-generated material never belongs in the product repository.
+/private/
+/workspace/
+/exports/
+/backups/
+/dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sqlite
+*.sqlite3
+*.db
+*.pdf
+*.epub
+*.zip
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
