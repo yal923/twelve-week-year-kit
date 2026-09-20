@@ -1,5 +1,9 @@
 # WorkBuddy 独立验证交接
 
+2026-09-20 后续：若本次只复测数字读写，发送[NUM-01.1 单文件方案](../superpowers/plans/2026-09-20-workbuddy-number-check.md)即可，不重新运行下面的旧整包。该小方案尚未执行，账号持有人需在本侧核对并确认具体范围；返回文件为 numeric-diagnostic-summary.md。
+
+## 原始整包交接｜历史记录
+
 这次交付的是 `workbuddy-capability-check-2026-09-19.zip`，用于首批两人内部能力试验，不是正式安装包。不要发送包含私人上下文的父工作目录，也无需发送整个开发仓库。
 
 压缩包内容：START_HERE.md、AGENTS.md、CAPABILITY_PLAN.md、SCOPE_AND_RECOVERY.md、ISOLATED_PROBE_EXCEPTION.md、KNOWN_LIMITATIONS.md、REPORT_TEMPLATE.md、probe.sh、input.txt、MANIFEST.json。清单保留共同试验的固定输入、写入上限、日志和恢复要求；去除开发插件依赖。probe.sh 仅检查本地进程和文件，不连接 Notion。
