@@ -1,6 +1,8 @@
 # WorkBuddy 已有测试补证｜只读，不重跑
 
-用途：完成两端[能力对照](../../reviews/capability-comparison-2026-09-20.md)所需的最小证据。已收到 shareable-summary；目前无需重新执行试验。下方文字可交给原 WorkBuddy 会话，文件本身不替代账号持有人指令。
+状态更新（2026-09-20）：本清单对应的补证已收到并核对，见[补证核对](../../reviews/workbuddy-evidence-assessment-2026-09-20.md)。保留下文作为当时的交接文本，不重复派发。数字请求数已由原摘要的 8 次更正为 11 次；没有新增测试授权。
+
+原用途：完成两端[能力对照](../../reviews/capability-comparison-2026-09-20.md)所需的最小证据。下方文字供原 WorkBuddy 会话只读整理已有材料，文件本身不替代账号持有人指令。
 
 ## 可直接交给 WorkBuddy 的文字
 
