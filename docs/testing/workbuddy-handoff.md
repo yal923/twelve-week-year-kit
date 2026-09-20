@@ -1,6 +1,6 @@
 # WorkBuddy 独立验证交接
 
-2026-09-20 后续：若本次只复测数字读写，发送[NUM-01.1 单文件方案](../superpowers/plans/2026-09-20-workbuddy-number-check.md)即可，不重新运行下面的旧整包。该小方案尚未执行，账号持有人需在本侧核对并确认具体范围；返回文件为 numeric-diagnostic-summary.md。
+2026-09-20 最新收件：[NUM-01.1 单文件方案](../superpowers/plans/2026-09-20-workbuddy-number-check.md)对应的 numeric-diagnostic-summary.md 已收到。报告一次 ProbeValue 2→5 更新成功；本轮核对范围及待澄清项见[复测核对](../../reviews/workbuddy-numeric-retest-2026-09-20.md)。原值已改变，不重跑该方案或下面的旧整包，也不自动还原；如需补充执行证据，仅整理已有日志。
 
 ## 原始整包交接｜历史记录
 

@@ -10,7 +10,7 @@
 
 外部审核：**已收到 ER-001／ER-002，分别针对 review.1／review.2，结论均为 conditional；本次工程设计候选未获独立复核或整份规格批准**
 
-产品兼容性测试：**完整产品尚未进行；两侧最小试验已有结果。Codex 有直接证据，WorkBuddy 摘要及补证已核对，数字写入失败且存在执行偏离；双端兼容未通过**
+产品兼容性测试：**完整产品尚未进行。Codex 有直接证据；WorkBuddy 原试验有数字失败与执行偏离，后续 NUM-01.1 报告单字段更新成功。新复测完整按计划执行仍待核对，原失败分支与双端兼容未通过**
 
 ## 已获授权
 
@@ -44,8 +44,8 @@ ER-001 审阅提交：`25d47ab38b3538a90ae08542c8df2de3f4d8c382`。其 16 项发
 
 review.4 同步 C06–C09，取消当前规格的手工视图降级，增加[搭建工程设计](docs/specs/notion-build-spec.md)及 R23／A25 的跨 Agent 一致性、独立校验和接续验收；现为 23 项需求、25 个场景。方法蓝图、评分、日期和未知请求的恢复语义不变。U01 实际宿主能力、U07 运行环境与分发方式尚未全部验证；完整物理定义、共同工具与适配器尚未交付，许可证仍未选择。
 
-已起草[执行工程补丁 EP-01-draft.1](docs/superpowers/specs/2026-09-20-notion-execution-patch-design.md)，随后按用户新的明确请求，单独准备[WorkBuddy 数字复测 NUM-01.1](docs/superpowers/plans/2026-09-20-workbuddy-number-check.md)。可仅交付这一份 Markdown，由该侧 WorkBuddy 核对原 W1A、前态与本人新授权后，最多主动更新一次 ProbeValue 2→5，交回 numeric-diagnostic-summary.md。当前尚未执行／收到新结果；完整物理定义和工具代码仍未交付，整个补丁也未因编写小方案而获批。标记、公式和重试缺口不因文档更新关闭，U01／U07 保持开放。旧整包和补证不重复运行。复核重点见[审核请求](reviews/REVIEW_REQUEST.md)。
+已起草[执行工程补丁 EP-01-draft.1](docs/superpowers/specs/2026-09-20-notion-execution-patch-design.md)，随后单独交付[WorkBuddy 数字复测 NUM-01.1](docs/superpowers/plans/2026-09-20-workbuddy-number-check.md)。现已收到 numeric-diagnostic-summary.md，报告本人在该侧重新确认后，一次更新 W1A.ProbeValue 2→5 并独立读回，其余受检字段不变；见[复测核对](reviews/workbuddy-numeric-retest-2026-09-20.md)。本轮只核对摘要，原始轨迹仍在该侧；404 后的父链／六次调用对账、旧 400 的过强解释仍待澄清，完整按计划执行保留 unverified。W1A 原本已有成功记录，这次不证明原失败分支修复或网络根因。5 保留，旧前态不再适用，不重跑原小方案。完整物理定义和工具代码尚未交付；整个补丁未因此获批。标记、公式和重试缺口及 U01／U07 保持开放。复核重点见[审核请求](reviews/REVIEW_REQUEST.md)。
 
-最小能力验证的[具体计划](docs/superpowers/plans/2026-09-19-minimal-capability-validation.md)在 Codex 侧完成固定样例，视图及两页遍历通过；description 与公式值依赖 Agent 只读界面辅助核对。WorkBuddy 补证更正为 11 次数字请求、1 次成功补写、10 次拒绝；两条行动数字仍缺失，初始行集仅 W1A，原定 Week 修改未成功。retrying 仅为工具声明，本次无异步任务观察。事后读取当前安装版本为 5.5.6，不反填为已确认运行时版本。该侧承认标记无法回读后未暂停、两步法未另获批准；由材料可重建至少七次建记录和八次更新请求，按原动作范围执行不通过。完整原始轨迹及批准原文仍在接收侧；本轮未独立访问。数字故障层未定，U01／U07、A17／A25 和全产品阶段均未通过；原始材料保留私有，尚未派发新测试或清理。
+原最小能力验证的[具体计划](docs/superpowers/plans/2026-09-19-minimal-capability-validation.md)在 Codex 侧完成固定样例，视图及两页遍历通过；description 与公式值依赖 Agent 只读界面辅助核对。WorkBuddy 原补证更正为 11 次数字请求、1 次成功补写、10 次拒绝；两条行动数字缺失，初始行集仅 W1A，原定 Week 修改未成功。retrying 仅为工具声明，原试验无异步任务观察。事后读取当前安装版本为 5.5.6，不反填为已确认运行时版本。该侧承认标记无法回读后未暂停、两步法未另获批准；由材料可重建至少七次建记录和八次更新请求，按原动作范围执行不通过。完整原始轨迹及批准原文仍在接收侧；本轮未独立访问。后续 NUM-01.1 另计，不改写这些历史结果；数字故障层、U01／U07、A17／A25 和全产品阶段均未关闭。本轮仅核对新收件，不派发测试或清理。
 
 GitHub 上实际审阅版本以审阅者记录的 commit SHA 为准，不用会变化的分支名替代。

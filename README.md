@@ -12,7 +12,7 @@
 
 2026-09-20 已核对 WorkBuddy 测试摘要与[补充证据](reviews/workbuddy-evidence-assessment-2026-09-20.md)：数字请求实际为 11 次、1 次成功，故障层仍未知；另有标记缺口后未停和临时增加操作的执行偏离。[两端能力对照](reviews/capability-comparison-2026-09-20.md)保留不同证据等级，双宿主兼容尚未通过。工程细化据此覆盖固定参数、派发预算和停止条件；无需重复补证或重跑整个包。
 
-工程细化现已形成[执行补丁 EP-01-draft.1](docs/superpowers/specs/2026-09-20-notion-execution-patch-design.md)，可先读其 §0，再审核参数、调用计数、停止与恢复规则及单记录数字诊断范围。它是待审设计，没有实现小工具、执行新测试或关闭兼容性缺口。
+工程细化现已形成[执行补丁 EP-01-draft.1](docs/superpowers/specs/2026-09-20-notion-execution-patch-design.md)，可先读其 §0，再审核参数、调用计数、停止与恢复规则及单记录数字诊断范围。它仍是待审设计，小工具尚未实现。后续独立的 [NUM-01.1 复测摘要已核对](reviews/workbuddy-numeric-retest-2026-09-20.md)：WorkBuddy 报告一次数字更新成功，原失败分支和完整兼容性仍未验证。
 
 ## 此次交付是什么
 
